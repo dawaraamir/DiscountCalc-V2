@@ -1,0 +1,21 @@
+
+<h2>Angular Discount Calculator</h2>
+
+<div class="container">
+  <div class="row">
+<div class="col-md-4">
+  <label for="price">Price: </label>
+  <input type="number" name="price" [(ngModel)]="price">
+</div>
+<div class="col-md-4">
+  <label for="discount"> Discount: </label>
+  <input type="number" name="discount" [(ngModel)]="discount">
+</div>
+<div class="col-md-4">
+  <h2>Results:</h2>
+  <h3 id="afterDiscount"></h3>
+</div>
+</div>
+</div>
+<br>
+<div class="button"><input type="button" value="submit" (click)="calculate()"></div>
